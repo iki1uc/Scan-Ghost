@@ -1,4 +1,4 @@
-async function ghostCheck() {
+export async function ghostCheck() {
 
     const missing = [];
 
@@ -39,8 +39,8 @@ async function ghostCheck() {
 
     // RESULT
     if (missing.length === 0) {
-        return "Ghost Scan ist vollständig und funktionsbereit.";
+        return "✔ Ghost Scan ist vollständig und funktionsbereit.";
     }
 
-    return "Ghost Scan fehlt:\n\n" + missing.join("\n");
+    return "✘ Ghost Scan fehlt:\n\n" + missing.join("\n");
 }

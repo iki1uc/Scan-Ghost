@@ -1,14 +1,8 @@
-import { marktCheck } from "./marktCheck.js";
-import { respoCheck } from "./respoCheck.js";
+import { respoBewertung } from "./bewertung.js";
 
-document.getElementById("markt").onclick = async () => {
-    const result = await marktCheck();
+document.getElementById("bewertung").onclick = () => {
     const out = document.getElementById("output");
-
+    out.style.color = "#00ccff";
     out.style.animation = "pulse 1.8s infinite";
-
-    if (result.startsWith("✔")) out.style.color = "#00ff00";
-    else out.style.color = "#ff3333";
-
-    out.textContent = result;
+    out.textContent = respoBewertung();
 };

@@ -1,1 +1,11 @@
+{
+    "status": "DEFECT",
+    "action": "NEUTRALIZE",
+    "message": "Element wurde neutralisiert.",
+    "color": "yellow",
+    "priority": "critical",
+    "flags": {
+        "neutralized": true
+    }
+}
 

@@ -1,1 +1,9 @@
+{
+    "axis": {
+        "AX": "AX-FORWARD",
+        "XA": "XA-BACKWARD",
+        "AX_OUT": "ROOM-EXIT",
+        "XA_IN": "ROOM-ENTRY"
+    }
+}
 

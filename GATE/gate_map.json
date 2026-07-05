@@ -1,1 +1,8 @@
+{
+    "gate-map": {
+        "nodes": ["1tel", "2tel", "3tel", "4tel"],
+        "links": ["SAT-CLUSTER"],
+        "type": "WORMHOLE-MAP"
+    }
+}
 

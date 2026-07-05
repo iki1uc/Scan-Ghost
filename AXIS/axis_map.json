@@ -1,1 +1,7 @@
 
+{
+    "axis-map": {
+        "map": ["FORWARD", "BACKWARD", "ENTRY", "EXIT"],
+        "type": "AXIS-MAP"
+    }
+}

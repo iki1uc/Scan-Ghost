@@ -1,1 +1,7 @@
+{
+    "aura-direction": {
+        "directions": ["indoor", "outdoor", "forward", "back"],
+        "type": "AURA-DIRECTION"
+    }
+}
 

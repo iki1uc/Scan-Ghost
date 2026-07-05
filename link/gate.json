@@ -3,6 +3,7 @@
         "wormhole": true,
         "transition": "GATE-LINK",
         "connect": "SAT-CLUSTER",
-        "mode": "GATE-WORMHOLE"
+        "mode": "GATE-WORMHOLE",
+        "description": "Wurmlochübergänge zwischen Räumen"
     }
 }

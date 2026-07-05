@@ -1,10 +1,10 @@
-import { autoBuild } from "./autoBuild.js";
+import { respoCheck } from "./respoCheck.js";
 
-document.getElementById("autobuild").onclick = async () => {
-    const result = await marktCheck();
-    const missing = result.split("\n").filter(x => x.includes("fehlt"));
+document.getElementById("respo").onclick = async () => {
+    const result = await respoCheck();
+    const out = document.getElementById("output");
 
-    const buildResult = await autoBuild(missing);
-
-    document.getElementById("output").textContent = buildResult;
+    out.style.color = "#00ccff";
+    out.style.animation = "pulse 1.8s infinite";
+    out.textContent = result;
 };

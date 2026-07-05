@@ -1,1 +1,7 @@
+{
+    "mnmm": {
+        "norms": ["MOVE", "ENGINE", "ORDER", "MANEUVER", "ARGUMENT"],
+        "type": "MNMM-NORMS"
+    }
+}
 

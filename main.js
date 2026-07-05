@@ -1,6 +1,6 @@
-document.getElementById("run").onclick = async () => {
-    const input = document.getElementById("input").value;
-    const output = await interpretInput(input);
-    document.getElementById("output").textContent = output;
-};
+import { ghostCheck } from "./ghostChecker.js";
 
+document.getElementById("run").onclick = async () => {
+    const check = await ghostCheck();
+    document.getElementById("output").textContent = check;
+};

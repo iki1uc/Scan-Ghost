@@ -4,6 +4,24 @@
 <meta charset="UTF-8">
 <title>RESPO‑127 Mega‑Index</title>
 <link rel="stylesheet" href="../style.css">
+
+<style>
+    #container {
+        animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 0.3; transform: scale(0.95); }
+        50% { opacity: 1; transform: scale(1.05); }
+        100% { opacity: 0.3; transform: scale(0.95); }
+    }
+
+    button {
+        margin: 6px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+</style>
 </head>
 <body>
 
@@ -16,6 +34,14 @@
     <button id="move">MOVE‑Kalkül</button>
     <button id="ghost">GhostScan starten</button>
 
+    <hr>
+
+    <!-- Übergang zum BIOS -->
+    <button id="bios">→ BIOS öffnen</button>
+
+    <!-- Rückkehr zu RESPO -->
+    <button id="back">← Zurück zu RESPO‑127</button>
+
     <pre id="output"></pre>
 </div>
 
@@ -23,6 +49,18 @@
 <script src="../respoCheck.js"></script>
 <script src="../scanghost.js"></script>
 <script src="../main.js"></script>
+
+<script>
+    // BIOS öffnen
+    document.getElementById("bios").onclick = () => {
+        window.location.href = "https://iki1uc.github.io/BIOS/";
+    };
+
+    // Rückkehr zu RESPO‑127
+    document.getElementById("back").onclick = () => {
+        window.location.href = "https://iki1uc.github.io/Scan-Ghost/respo/";
+    };
+</script>
 
 </body>
 </html>

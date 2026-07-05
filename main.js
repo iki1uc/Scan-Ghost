@@ -1,6 +1,6 @@
-import { ghostCheck } from "./ghostChecker.js";
+import { marktCheck } from "./marktCheck.js";
 
 document.getElementById("run").onclick = async () => {
-    const check = await ghostCheck();
-    document.getElementById("output").textContent = check;
+    const result = await marktCheck();
+    document.getElementById("output").textContent = result;
 };

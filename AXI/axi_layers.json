@@ -1,1 +1,7 @@
+{
+    "axi-layers": {
+        "layers": ["LOW", "MID", "HIGH", "MAX"],
+        "type": "AXI-LAYERS"
+    }
+}
 

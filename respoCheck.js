@@ -1,6 +1,26 @@
-import { respoCheck } from "./respoCheck.js";
+export async function respoCheck() {
 
-document.getElementById("respo").onclick = async () => {
-    const result = await respoCheck();
-    document.getElementById("output").textContent = result;
-};
+    const respo = [
+        "OK",
+        "DEFECT",
+        "MIXED",
+        "NEUTRALIZE",
+        "SEPARATE"
+    ];
+
+    const missing = [];
+
+    for (const r of respo) {
+        try {
+            await fetch("./respo/" + r + ".json");
+        } catch {
+            missing.push("RESPO fehlt: " + r);
+        }
+    }
+
+    if (missing.length === 0) {
+        return "✔ Alle RESPO‑Plätze sind vorhanden.";
+    }
+
+    return "✘ RESPO‑Fehler:\n\n" + missing.join("\n");
+}

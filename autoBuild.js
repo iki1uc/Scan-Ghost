@@ -1,4 +1,3 @@
-
 export async function autoBuild(missingList) {
 
     for (const entry of missingList) {

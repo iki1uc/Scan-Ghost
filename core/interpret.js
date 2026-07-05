@@ -25,7 +25,8 @@ function interpret(input){
                 reason:"UNKNOWN_ELEMENT",
                 element:p,
                 action:"NEUTRALIZE",
-                method:"UNK-PROTO"
+                method:"UNK-PROTO",
+                room: axiRoom(input)
             };
         }
     }
@@ -38,7 +39,8 @@ function interpret(input){
             discipline:unique[0].toUpperCase(),
             messID:unique[0].toUpperCase()+"-ID-X",
             method:unique[0].toUpperCase()+"-PROTO",
-            action:"PROCESS"
+            action:"PROCESS",
+            room: axiRoom(input)
         };
     }
 
@@ -47,7 +49,7 @@ function interpret(input){
         reason:"MIXED_DISCIPLINES",
         disciplines:unique,
         action:"SEPARATE",
-        method:"META-PROTO"
+        method:"META-PROTO",
+        room: axiRoom(input)
     };
 }
-

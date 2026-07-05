@@ -1,1 +1,7 @@
+{
+    "on3-matrix": {
+        "matrix": ["LOW", "MID", "HIGH", "MAX"],
+        "type": "ON3-MATRIX"
+    }
+}
 

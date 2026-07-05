@@ -1,1 +1,7 @@
-
+{
+    "tmp": {
+        "layer": "3tel",
+        "type": "TMP-ROOM",
+        "depth": "HIGH"
+    }
+}

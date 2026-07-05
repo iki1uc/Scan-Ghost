@@ -1,1 +1,8 @@
-
+{
+    "sat": {
+        "cluster": true,
+        "nodes": ["1tel", "2tel", "3tel", "4tel"],
+        "mode": "SAT-CLUSTER",
+        "connect": "GATE-WORMHOLE"
+    }
+}

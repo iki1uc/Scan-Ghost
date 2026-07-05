@@ -1,1 +1,9 @@
+{
+    "gate": {
+        "wormhole": true,
+        "entry": "AXI",
+        "exit": "SAT",
+        "mode": "GATE-WORMHOLE"
+    }
+}
 

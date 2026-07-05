@@ -1,9 +1,8 @@
 export async function marktCheck() {
 
     const missing = [];
-    const wrong = [];
+    let pipeline = "NC‑Pipeline: ";
 
-    // MARKT‑3 MODULE
     const markt3 = {
         CORE: [
             "./core/interpret.js",
@@ -28,7 +27,6 @@ export async function marktCheck() {
         ]
     };
 
-    // MARKT‑6 MODULE
     const markt6 = {
         ITEMS: [
             "./items/AX.json",
@@ -49,7 +47,6 @@ export async function marktCheck() {
         ]
     };
 
-    // CHECKER
     async function checkFiles(list, type) {
         for (const file of list) {
             try {
@@ -60,7 +57,6 @@ export async function marktCheck() {
         }
     }
 
-    // RUN CHECKS
     await checkFiles(markt3.CORE, "CORE");
     await checkFiles(markt3.RESPO, "RESPO");
     await checkFiles(markt3.LINK, "LINK");
@@ -69,11 +65,16 @@ export async function marktCheck() {
     await checkFiles(markt6.TMP, "TMP");
     await checkFiles(markt6.EXT, "EXT");
 
-    // RESULT
     if (missing.length === 0) {
-        return "✔ MARKT‑6 vollständig — ScanGhost ist bereit.";
+        pipeline += "MARKT‑6 vollständig.";
+        return "✔ " + pipeline + "\nScanGhost ist bereit.";
     }
 
-    return "✘ MARKT‑System unvollständig:\n\n" + missing.join("\n");
-}
+    if (missing.length <= 3) {
+        pipeline += "MARKT‑3 teilweise.";
+    } else {
+        pipeline += "MARKT‑3 unvollständig.";
+    }
 
+    return "✘ " + pipeline + "\n\nFehlende Module:\n" + missing.join("\n");
+}

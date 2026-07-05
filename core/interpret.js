@@ -5,7 +5,8 @@ function interpret(input){
         time: ["TIME-3x11","TIME-3x10","TIME-3x5"],
         meta: ["3x13","3x12","3x11","3x10"],
         op: ["AXXX","3x3","3x2","3x1"],
-        rt: ["AXIS","borgProtocol"]
+        rt: ["AXIS","borgProtocol"],
+        mnmm: ["MNMM-MOVE","MNMM-ENGINE","MNMM-ORDER","MNMM-MANEUVER","MNMM-ARG"]
     };
 
     const parts = input.split("+").map(s=>s.trim());
@@ -26,7 +27,11 @@ function interpret(input){
                 element:p,
                 action:"NEUTRALIZE",
                 method:"UNK-PROTO",
-                room: axiRoom(input)
+                room: axiRoom(input),
+                direction: auraDirection(input),
+                depth: on3Depth(input),
+                axis: axisShift(input),
+                norm: mnmmNorm(input)
             };
         }
     }
@@ -40,7 +45,11 @@ function interpret(input){
             messID:unique[0].toUpperCase()+"-ID-X",
             method:unique[0].toUpperCase()+"-PROTO",
             action:"PROCESS",
-            room: axiRoom(input)
+            room: axiRoom(input),
+            direction: auraDirection(input),
+            depth: on3Depth(input),
+            axis: axisShift(input),
+            norm: mnmmNorm(input)
         };
     }
 
@@ -50,6 +59,10 @@ function interpret(input){
         disciplines:unique,
         action:"SEPARATE",
         method:"META-PROTO",
-        room: axiRoom(input)
+        room: axiRoom(input),
+        direction: auraDirection(input),
+        depth: on3Depth(input),
+        axis: axisShift(input),
+        norm: mnmmNorm(input)
     };
 }

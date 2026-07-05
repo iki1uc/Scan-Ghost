@@ -1,9 +1,6 @@
 {
     "axis": {
-        "AX": "AX-FORWARD",
-        "XA": "XA-BACKWARD",
-        "AX_OUT": "ROOM-EXIT",
-        "XA_IN": "ROOM-ENTRY"
+        "shift": ["AX", "XA", "AX_OUT", "XA_IN"],
+        "mode": "AXIS-SHIFT"
     }
 }
-

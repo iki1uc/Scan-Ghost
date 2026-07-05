@@ -1,1 +1,8 @@
+{
+    "sat": {
+        "cluster": true,
+        "mode": "SAT-CLUSTER",
+        "connect": "GATE-WORMHOLE"
+    }
+}
 

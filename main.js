@@ -1,14 +1,10 @@
-document.getElementById("markt").onclick = async () => {
+import { autoBuild } from "./autoBuild.js";
+
+document.getElementById("autobuild").onclick = async () => {
     const result = await marktCheck();
-    const out = document.getElementById("output");
+    const missing = result.split("\n").filter(x => x.includes("fehlt"));
 
-    out.style.animation = "pulse 1.8s infinite";
+    const buildResult = await autoBuild(missing);
 
-    if (result.startsWith("✔")) {
-        out.style.color = "#00ff00"; // GRÜN
-    } else {
-        out.style.color = "#ff3333"; // ROT
-    }
-
-    out.textContent = result;
+    document.getElementById("output").textContent = buildResult;
 };

@@ -3,6 +3,7 @@
         "cluster": true,
         "nodes": ["1tel", "2tel", "3tel", "4tel"],
         "mode": "SAT-CLUSTER",
-        "connect": "GATE-WORMHOLE"
+        "connect": "GATE-WORMHOLE",
+        "description": "Clusterkette für Multi-Raum Navigation"
     }
 }

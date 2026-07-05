@@ -1,1 +1,7 @@
+{
+    "aura": {
+        "directions": ["AU_to_RA", "RA_to_AU", "indoor", "outdoor", "forward", "back"],
+        "mode": "AURA-BRIDGE"
+    }
+}
 

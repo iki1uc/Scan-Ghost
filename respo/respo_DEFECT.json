@@ -1,1 +1,12 @@
+{
+    "status": "DEFECT",
+    "action": "NEUTRALIZE",
+    "message": "Defektes oder unbekanntes Element erkannt.",
+    "color": "red",
+    "priority": "high",
+    "flags": {
+        "unknown_element": true,
+        "neutralize": true
+    }
+}
 

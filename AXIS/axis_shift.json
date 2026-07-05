@@ -1,1 +1,6 @@
-
+{
+    "axis": {
+        "shift": ["AX", "XA", "AX_OUT", "XA_IN"],
+        "type": "AXIS-SHIFT"
+    }
+}

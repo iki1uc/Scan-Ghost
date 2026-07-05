@@ -1,1 +1,12 @@
+{
+    "status": "SEPARATED",
+    "action": "PROCESS",
+    "message": "Elemente wurden getrennt und können weiterverarbeitet werden.",
+    "color": "blue",
+    "priority": "normal",
+    "flags": {
+        "separated": true,
+        "ready": true
+    }
+}
 

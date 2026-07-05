@@ -1,1 +1,13 @@
+{
+    "status": "DEFECT",
+    "action": "SEPARATE",
+    "message": "Gemischte Disziplinen erkannt. Trennung erforderlich.",
+    "color": "orange",
+    "priority": "high",
+    "flags": {
+        "mixed_disciplines": true,
+        "separate": true
+    }
+}
+}
 

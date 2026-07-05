@@ -1,1 +1,8 @@
-
+{
+    "gate": {
+        "wormhole": true,
+        "transition": "GATE-LINK",
+        "connect": "SAT-CLUSTER",
+        "mode": "GATE-WORMHOLE"
+    }
+}

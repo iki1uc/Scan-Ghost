@@ -1,1 +1,7 @@
+{
+    "mnmm": {
+        "norms": ["MNMM-MOVE", "MNMM-ENGINE", "MNMM-ORDER", "MNMM-MANEUVER", "MNMM-ARG"],
+        "mode": "MNMM-ENGINE"
+    }
+}
 

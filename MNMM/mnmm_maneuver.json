@@ -1,1 +1,7 @@
 
+{
+    "mnmm-maneuver": {
+        "maneuver": ["LEFT", "RIGHT", "UP", "DOWN"],
+        "type": "MNMM-MANEUVER"
+    }
+}

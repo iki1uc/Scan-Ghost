@@ -1,1 +1,16 @@
+{
+    "status": "OK",
+    "action": "PROCESS",
+    "message": "Element erfolgreich verarbeitet.",
+    "color": "green",
+    "priority": "normal",
+    "flags": {
+        "discipline": true,
+        "room": true,
+        "direction": true,
+        "depth": true,
+        "axis": true,
+        "norm": true
+    }
+}
 

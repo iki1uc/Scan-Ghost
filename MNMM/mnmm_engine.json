@@ -1,1 +1,7 @@
+{
+    "mnmm-engine": {
+        "engine": ["CORE", "MOTOR", "SHIFT"],
+        "type": "MNMM-ENGINE"
+    }
+}
 

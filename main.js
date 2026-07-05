@@ -1,10 +1,14 @@
-import { autoBuild } from "./autoBuild.js";
+import { marktCheck } from "./marktCheck.js";
+import { respoCheck } from "./respoCheck.js";
 
-document.getElementById("autobuild").onclick = async () => {
+document.getElementById("markt").onclick = async () => {
     const result = await marktCheck();
-    const missing = result.split("\n").filter(x => x.includes("fehlt"));
+    const out = document.getElementById("output");
 
-    const buildResult = await autoBuild(missing);
+    out.style.animation = "pulse 1.8s infinite";
 
-    document.getElementById("output").textContent = buildResult;
+    if (result.startsWith("✔")) out.style.color = "#00ff00";
+    else out.style.color = "#ff3333";
+
+    out.textContent = result;
 };

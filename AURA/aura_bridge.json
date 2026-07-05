@@ -1,1 +1,7 @@
+{
+    "aura": {
+        "bridge": ["AU_to_RA", "RA_to_AU"],
+        "type": "AURA-BRIDGE"
+    }
+}
 
